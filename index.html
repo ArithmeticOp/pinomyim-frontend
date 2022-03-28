@@ -390,55 +390,53 @@
                                                     ร่วมบริจาค</a>
                                             </div>
 
-                                            <div class="fundraiser-item fundraiser-project project">
-                                                <div class="fundraiser-project-label kanit-light">
-                                                    การบริจาคทั้งหมดของเพื่อนๆ จะนำไปให้</div>
-                                                <div class="fundraiser-project-content">
-                                                    <div class="item">
-                                                        <div class="project-card">
-                                                            <div id="carousel-example-generic"
-                                                                class="carousel slide media" data-ride="carousel"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                            <div class="animate-content animate-donor-content donorList-wrapper"
+                                                style="display: none;" id="donorListWrapperAnimate"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 _pa-0 wrapper-animate-content">
+
+                            <div class="modal fade modal-donorList" tabindex="-1" role="dialog" id="messageModal">
+                                <div class="modal-dialog modal-md" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h3 class="modal-title">ข้อความจากผู้บริจาค</h3>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+                                                style="position: absolute;right: 20px;top: 24px;">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="" id="donorList">
+                                                <div class="donorList-wrapper"></div>
                                             </div>
-                                            <div class="animate-content animate-donor-content donorList-wrapper" style="display: none;" id="donorListWrapperAnimate"></div>
+
                                         </div>
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="text-center btn-wrapper _pb-20">
+                                <a class="btn-orange-round-outline btn-sm" style="font-size: 16px !important"
+                                    data-toggle="modal" data-target="#messageModal"><i class="fa fa-comment"></i>
+                                    อ่านข้อความทั้งหมด</a>
+                            </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="col-sm-12 _pa-0 wrapper-animate-content">
-
-                        <div class="modal fade modal-donorList" tabindex="-1" role="dialog" id="messageModal">
-                            <div class="modal-dialog modal-md" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h3 class="modal-title">ข้อความจากผู้บริจาค</h3>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"
-                                            style="position: absolute;right: 20px;top: 24px;">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <div class="" id="donorList">
-                                            <div class="donorList-wrapper"></div>
-                                        </div>
-
-                                    </div>
+                <div style="max-width: 1000px; max-height: 1000px; margin: auto; width: 80%;">
+                    <div class="fundraiser-item fundraiser-project project">
+                        <div class="fundraiser-project-content">
+                            <div class="item">
+                                <div id="carousel-example-generic" class="carousel slide media" data-ride="carousel">
                                 </div>
                             </div>
                         </div>
-
-                        <div class="text-center btn-wrapper _pb-20">
-                            <a class="btn-orange-round-outline btn-sm" style="font-size: 16px !important"
-                                data-toggle="modal" data-target="#messageModal"><i class="fa fa-comment"></i>
-                                อ่านข้อความทั้งหมด</a>
-                        </div>
                     </div>
-
                 </div>
 
                 <div class="section-donation-form-wrapper" id="donate">
@@ -820,7 +818,7 @@
                                                         carouselInner +=
                                                             `
                                                                 <div class="item ${i === 0 ? 'active' : ''}">
-                                                                    <img class="image img-responsive" src="${resp[i].images}" width="370" height="220" alt="">
+                                                                    <img class="image img-responsive" src="${resp[i].images}" alt="">
                                                                 </div>
                                                             `;
                                                     }
